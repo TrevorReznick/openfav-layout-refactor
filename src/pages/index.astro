@@ -1,6 +1,7 @@
 ---
 import { Separator } from '@/components/ui/separator'
 import Layout from '../layouts/layout.astro'
+import TestReact from '@/components/test/TestReactNanostores'
 ---
 
 <Layout title="Hello World">
@@ -12,16 +13,6 @@ import Layout from '../layouts/layout.astro'
       </p>
     </div>
     <Separator className="my-4" />
-    <div class="flex h-5 items-center space-x-4 text-sm">
-      <div>
-        <img src="/astrojs.png" width="20px" />
-      </div>
-      <div>
-        <img src="/tailwind.png" width="20px" />
-      </div>
-      <div>
-        <img src="/shadcn.jpg" width="100px" height="100px" />
-      </div>
-    </div>
+    <TestReact client:only />
   </div>
 </Layout>
