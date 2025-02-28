@@ -1,0 +1,13 @@
+---
+// src/pages/index.astro
+
+import Layout from '@/layouts/layout.astro'
+import { useStore } from '@nanostores/react'
+import { useEffect, useState } from 'react'
+import { counterStore } from '@/store'
+import Navbar from '@/components/jsx/Navbar.tsx'
+---
+
+<Layout title="AI-Powered Workflow Assistant">
+  <Navbar client:load />
+</Layout>
