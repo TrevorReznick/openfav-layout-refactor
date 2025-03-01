@@ -6,6 +6,14 @@ import CollectionsSection from '@/components/jsx/dashboard/CollectionsSection'
 import AddLinkDialog from './AddLinkDialog'
 import AddCollectionDialog from './AddCollectionDialog'
 
+// Funzione "stupida" per simulare il recupero dati
+const fetchUserData = async () => {
+  console.log('Fetching user data...')
+  // Simula una chiamata API con un timeout
+  await new Promise((resolve) => setTimeout(resolve, 1000))
+  console.log('User data fetched!')
+}
+
 const Dashboard = () => {
   const [addLinkOpen, setAddLinkOpen] = useState(false)
   const [addCollectionOpen, setAddCollectionOpen] = useState(false)
